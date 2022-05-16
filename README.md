@@ -1,0 +1,24 @@
+# Hydroswap Toolkit
+
+## Packages
+
+- [hydroswap-uikit](https://github.com/HydroBlockchain/hydroswap-toolkit/tree/master/packages/hydroswap-uikit) : React components used to build the hydroswap UI.
+- [hydroswap-profile-sdk](https://github.com/HydroBlockchain/hydroswap-toolkit/tree/master/packages/hydroswap-profile-sdk) : Handy functions to retrieve data for HydroBlockchain Profile system
+- [token-lists](https://github.com/HydroBlockchain/hydroswap-toolkit/tree/master/packages/token-lists) : Main HydroBlockchain token list and tools to validate it.
+
+## How to use
+
+Clone the repository
+
+```
+git clone git@github.com:HydroBlockchain/hydroswap-toolkit.git
+```
+
+Run yarn at the root of the workspace
+
+```
+cd hydroswap-toolkit
+yarn
+```
+
+Then, refer to the readme of each project.
