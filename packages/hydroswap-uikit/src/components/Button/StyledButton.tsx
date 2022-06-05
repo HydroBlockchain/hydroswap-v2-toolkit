@@ -1,10 +1,11 @@
 import styled, { DefaultTheme } from "styled-components";
 import { space, layout, variant } from "styled-system";
 import { scaleVariants, styleVariants } from "./theme";
+import { Colors } from "../../theme/types";
 import { BaseButtonProps } from "./types";
 
 interface ThemedButtonProps extends BaseButtonProps {
-  theme: DefaultTheme;
+  theme: DefaultTheme &{ colors: Colors };
 }
 
 interface TransientButtonProps extends ThemedButtonProps {

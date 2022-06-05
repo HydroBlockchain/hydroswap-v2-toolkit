@@ -1,8 +1,8 @@
-# 🥞 Pancake UIkit
+# Hydroswap UIkit
 
-[![Version](https://img.shields.io/npm/v/@pancakeswap/uikit)](https://www.npmjs.com/package/@pancakeswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@pancakeswap/uikit)](https://www.npmjs.com/package/@pancakeswap/uikit)
 
-Pancake UIkit is a set of React components and hooks used to build pages on Pancake's apps. It also contains a theme file for dark and light mode.
+
+Hydroswap UIkit is a set of React components and hooks used to build pages on Hydroswap's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 

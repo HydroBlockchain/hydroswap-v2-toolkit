@@ -9,17 +9,18 @@ import { IconButton } from "../Button";
 import { CloseIcon } from "../Svg";
 import Flex from "../Box/Flex";
 import { AlertProps, variants } from "./types";
+import {Colors} from "../../theme/types";
 
 interface ThemedIconLabel {
   variant: AlertProps["variant"];
-  theme: DefaultTheme;
+  theme: DefaultTheme & { colors: Colors}
   hasDescription: boolean;
 }
 
 const getThemeColor = ({ theme, variant = variants.INFO }: ThemedIconLabel) => {
   switch (variant) {
     case variants.DANGER:
-      return theme.colors.failure;
+      return theme.colors.failure
     case variants.WARNING:
       return theme.colors.warning;
     case variants.SUCCESS:

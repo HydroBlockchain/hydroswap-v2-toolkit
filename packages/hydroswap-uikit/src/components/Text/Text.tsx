@@ -26,7 +26,6 @@ const Text = styled.div<TextProps>`
     `white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;`}
-
   ${space}
   ${typography}
   ${layout}
@@ -36,6 +35,7 @@ Text.defaultProps = {
   color: "text",
   small: false,
   ellipsis: false,
+  children:React.Node
 };
 
 export default Text;

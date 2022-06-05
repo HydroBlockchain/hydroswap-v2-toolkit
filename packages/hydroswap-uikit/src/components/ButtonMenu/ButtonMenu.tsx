@@ -5,7 +5,7 @@ import { scales, variants } from "../Button/types";
 import { ButtonMenuProps } from "./types";
 
 interface StyledButtonMenuProps extends ButtonMenuProps {
-  theme: DefaultTheme;
+  theme: DefaultTheme & { colors: any };
 }
 
 const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
