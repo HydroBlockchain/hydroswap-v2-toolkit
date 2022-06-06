@@ -15,7 +15,7 @@ export const baseColors = {
 
 export const additionalColors = {
   binance: "#F0B90B",
-  overlay: "#452a7a",
+  overlay: "#c5c5c5",//"#452a7a",
   gold: "#FFC700",
   silver: "#B2B2B2",
   bronze: "#E7974D",
@@ -25,21 +25,22 @@ export const lightColors: Colors = {
   ...baseColors,
   ...additionalColors,
   primary: "hsla(240, 4%, 14%, 1)",
+  menuBackground: "hsla(0, 0%, 91%, 1)",
   background: "#FFFFFF", //"#FAF9FA",
   backgroundDisabled: "#E9EAEB",
-  backgroundAlt: "hsba(0, 0%, 91%, 1)", // #E9E9E9
+  backgroundAlt: "hsla(0, 0%, 91%, 1)", // #E9E9E9
   backgroundAlt2: "rgba(255, 255, 255, 0.7)",
   cardBorder: "#E7E3EB",
   contrast: "#191326",
   dropdown: "#F6F6F6",
   dropdownDeep: "#EEEEEE",
   invertedContrast: "#FFFFFF",
-  input: "hsba(0, 0%, 96%, 1)", //"#eeeaf4",
+  input: "hsla(0, 0%, 96%, 1)", //"#eeeaf4",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-  text:"hsba(0, 0%, 0%, 1)", //"#280D5F",
+  text:"hsla(0, 0%, 27%, 1)", //"#280D5F",
   textDisabled: "#BDC2C4",
-  textSubtle: "hsla(240, 4%, 14%, 1)",
+  textSubtle: "hsla(240, 4%, 14%, 1)", // hsla(0, 0%, 100%, 1)
   disabled: "#E9EAEB",
   btnBackground:"hsla(0, 0%, 27%, 1)",
   btnColor:"hsla(0, 0%, 100%, 1)",
@@ -58,13 +59,14 @@ export const darkColors: Colors = {
   ...baseColors,
   ...additionalColors,
  // background: "#000000",
+ menuBackground: "hsla(240, 4%, 9%, 1)",
  background: "hsla(240, 4%, 14%, 1)", // hsla(240, 4%, 14%, 1) #212124;
   primary: "#e9e9e9",
   secondary: "#c5c5c5",
   btnBackground:"hsla(0, 0%, 0%, 1)",
   btnColor:"hsla(0, 0%, 100%, 1)",
   backgroundDisabled: "hsla(240, 4%, 14%, 1)",
-  backgroundAlt:"hsba(240, 8%, 9%, 1)", // "#161618",
+  backgroundAlt:"hsla(240, 8%, 9%, 1)", // "#161618",
   backgroundAlt2: "rgba(39, 38, 44, 0.7)",
   cardBorder: "#383241",
   contrast: "#FFFFFF",
@@ -75,9 +77,9 @@ export const darkColors: Colors = {
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
   tertiary: "#353547",
-  text:"hsba(0, 0%, 77%, 1)", //"#F4EEFF",
+  text:"hsla(0, 0%, 77%, 1)", //"#F4EEFF",
   textDisabled: "#666171",
-  textSubtle: "#B8ADD2",
+  textSubtle: "#c5c5c5",
   disabled: "#524B63",
   gradients: {
     bubblegum: "hsla(240, 4%, 14%, 1)", //linear-gradient(139.73deg,#3D2A54 0%,#00458e 100%)

@@ -4,25 +4,27 @@ import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${darkColors.backgroundAlt};
-`;
-
-export const StyledList = styled.ul`
+  /* background: ${darkColors.backgroundAlt}; */
+  background-color: ${({ theme }) => theme.colors.menuBackground}
+  `;
+  
+  export const StyledList = styled.ul`
   list-style: none;
-  margin-bottom: 40px;
-
+  /* margin-bottom: 40px; */
+  
   ${({ theme }) => theme.mediaQueries.md} {
     margin-bottom: 0px;
   }
-`;
-
-export const StyledListItem = styled.li`
+  `;
+  
+  export const StyledListItem = styled.li`
+  color: ${({ theme }) => theme.colors.text};
   font-size: 16px;
   margin-bottom: 8px;
   text-transform: capitalize;
 
   &:first-child {
-    color: ${darkColors.secondary};
+    /* color: ${darkColors.secondary}; */
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -39,7 +41,6 @@ export const StyledToolsContainer = styled(Flex)`
   border-style: solid;
   padding: 24px 0;
   margin-bottom: 24px;
-
   ${({ theme }) => theme.mediaQueries.sm} {
     border-top-width: 0;
     border-bottom-width: 0;
@@ -50,8 +51,11 @@ export const StyledToolsContainer = styled(Flex)`
 
 export const StyledSocialLinks = styled(SocialLinks)`
   border-bottom: 1px solid ${darkColors.cardBorder};
+  display: flex;
+  justify-content: right;
 `;
 
 export const StyledText = styled.span`
-  color: ${darkColors.text};
+  /* color: ${darkColors.text}; */
+  /* color: ${({ theme }) => theme.colors.text}; */
 `;

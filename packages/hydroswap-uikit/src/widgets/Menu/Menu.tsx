@@ -142,7 +142,7 @@ const Menu: React.FC<NavProps> = ({
                   <CakePrice cakePriceUsd={cakePriceUsd} />
                 </Box>
               )}
-              <Box mt="4px">
+              <Box mt="4px" ml="2px">
                 <LangSelector
                   currentLang={currentLang}
                   langs={langs}

@@ -41,7 +41,7 @@ const MenuItem: React.FC<FooterProps> = ({
           flexDirection={["column", null, "row"]}
           justifyContent="space-between"
           alignItems="flex-start"
-          mb={["42px", null, "36px"]}
+          mb={["42px", null, "0px"]}
         >
           {items?.map((item) => (
             <StyledList key={item.label}>
@@ -69,40 +69,19 @@ const MenuItem: React.FC<FooterProps> = ({
             <LogoWithTextIcon isDark width="160px" />
           </Box>
         </Flex>
-        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
+        <StyledSocialLinks order={[2]} pb={["10px", null, "20px"]} mb={["0", null, "32px"]} />
         <StyledToolsContainer
           order={[1, null, 3]}
           flexDirection={["column", null, "row"]}
-          justifyContent="space-between"
+          justifyContent="center"
+          style={{
+            textAlign: "center",
+          }}
         >
-          <Flex order={[2, null, 1]} alignItems="center">
-            <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-            <LangSelector
-              currentLang={currentLang}
-              langs={langs}
-              setLang={setLang}
-              color={darkColors.textSubtle as keyof Colors}
-              dropdownPosition="top-right"
-            />
-          </Flex>
-          <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
-            <Box mr="20px">
-              <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
-            </Box>
-            <Button
-            style={{
-              background:'#2e2e30cf'
-            }}
-              as="a"
-              href="https://pancakeswap.finance/swap?outputCurrency=0xf3DBB49999B25c9D6641a9423C7ad84168D00071"
-              target="_blank"
-              scale="sm"
-             
-              endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
-            >
-              {buyCakeLabel}
-            </Button>
-          </Flex>
+
+       <span>
+         Hydroswap  {new Date().getFullYear()}
+       </span>
         </StyledToolsContainer>
       </Flex>
     </StyledFooter>
