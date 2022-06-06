@@ -1,6 +1,6 @@
 {
   "name": "hydroswap-uikitv2",
-  "version": "0.2.6",
+  "version": "0.3.6",
   "description": "Set of UI components for Hydroswap Project",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

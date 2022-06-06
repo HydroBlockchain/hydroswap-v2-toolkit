@@ -40,6 +40,9 @@ export type Gradients = {
 };
 
 export type Colors = {
+  menuBackground?: string;
+  btnColor?: string;
+  btnBackground?: string;
   primary: string;
   primaryBright: string;
   primaryDark: string;

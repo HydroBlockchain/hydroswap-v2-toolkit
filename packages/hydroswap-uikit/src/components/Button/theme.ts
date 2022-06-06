@@ -21,6 +21,10 @@ export const styleVariants = {
     backgroundColor: "primary",
     color: "black",
   },
+  [variants.BUTTON]: {
+    backgroundColor: "btnBackground",
+    color: "btnColor",
+  },
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
     border: "2px solid",

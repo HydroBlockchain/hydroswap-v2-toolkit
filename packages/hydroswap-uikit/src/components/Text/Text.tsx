@@ -35,7 +35,7 @@ Text.defaultProps = {
   color: "text",
   small: false,
   ellipsis: false,
-  children:React.Node
+  children: "",
 };
 
 export default Text;
