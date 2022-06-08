@@ -3,11 +3,12 @@ import Svg from "../Svg";
 import { SvgProps } from "../types";
 
 interface LogoProps extends SvgProps {
-  isDark: boolean;
+  isDark?: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
+const Logo: React.FC<LogoProps> = ({ isDark=false, ...props }) => {
   const textColor = isDark ? "#C5C5C5" : "#212124";
+  // const textColor = isDark ? "#C5C5C5" : "#212124";
   return (
     <Svg width="1440" height="360" viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}
     style={{

@@ -3,6 +3,7 @@ import { darkColors } from "../../theme/colors";
 import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
+
 export const StyledFooter = styled(Flex)`
   /* background: ${darkColors.backgroundAlt}; */
   background-color: ${({ theme }) => theme.colors.menuBackground}
@@ -50,7 +51,7 @@ export const StyledToolsContainer = styled(Flex)`
 `;
 
 export const StyledSocialLinks = styled(SocialLinks)`
-  border-bottom: 1px solid ${darkColors.cardBorder};
+  /* border-bottom: 1px solid ${darkColors.cardBorder}; */
   display: flex;
   justify-content: right;
 `;

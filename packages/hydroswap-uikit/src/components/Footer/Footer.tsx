@@ -18,6 +18,7 @@ import CakePrice from "../CakePrice/CakePrice";
 import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
+import {useTheme} from "styled-components";
 
 const MenuItem: React.FC<FooterProps> = ({
   items,
@@ -30,6 +31,7 @@ const MenuItem: React.FC<FooterProps> = ({
   buyCakeLabel,
   ...props
 }) => {
+  const theme = useTheme();
   return (
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
@@ -53,7 +55,7 @@ const MenuItem: React.FC<FooterProps> = ({
                       href={href}
                       target="_blank"
                       rel="noreferrer noopener"
-                      color={isHighlighted ? baseColors.warning : darkColors.text}
+                      color={theme.colors.text}
                       bold={false}
                     >
                       {label}
@@ -69,8 +71,14 @@ const MenuItem: React.FC<FooterProps> = ({
             <LogoWithTextIcon isDark width="160px" />
           </Box>
         </Flex>
-        <StyledSocialLinks order={[2]} pb={["10px", null, "20px"]} mb={["0", null, "32px"]} />
-        <StyledToolsContainer
+        
+        <StyledSocialLinks order={[2]} pb={["10px", null, "0px"]} mb={["0", null, "0px"]} >
+          <span style={{marginRight:'1rem'}}>
+        <ThemeSwitcher isDark={theme.isDark} toggleTheme={toggleTheme}  /> 
+
+          </span>
+          </StyledSocialLinks>
+        {/* <StyledToolsContainer
           order={[1, null, 3]}
           flexDirection={["column", null, "row"]}
           justifyContent="center"
@@ -82,7 +90,7 @@ const MenuItem: React.FC<FooterProps> = ({
        <span>
          Hydroswap  {new Date().getFullYear()}
        </span>
-        </StyledToolsContainer>
+        </StyledToolsContainer> */}
       </Flex>
     </StyledFooter>
   );

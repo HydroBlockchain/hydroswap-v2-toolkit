@@ -26,7 +26,7 @@ const Slider: React.FC<SliderProps> = ({
     onValueChanged(parseFloat(target.value));
   };
 
-  const progressPercentage = (value / max) * 100;
+  const progressPercentage = Math.round((value / max) * 100);
   const isMax = value === max;
   let progressWidth: string;
   if (progressPercentage <= 10) {
@@ -40,6 +40,7 @@ const Slider: React.FC<SliderProps> = ({
   }
   const labelProgress = isMax ? "calc(100% - 12px)" : `${progressPercentage}%`;
   const displayValueLabel = isMax ? "MAX" : valueLabel;
+  console.log(typeof valueLabel, valueLabel);
   return (
     <Box position="relative" height="48px" {...props}>
       <BunnyButt disabled={disabled} />
