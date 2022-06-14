@@ -1,14 +1,14 @@
 {
-  "name": "@pancakeswap/eslint-config-pancake",
+  "name": "hydroswap-eslint-config",
   "version": "1.2.0",
-  "description": "Eslint config for PancakeSwap",
+  "description": "Eslint config for hydroswap",
   "main": "lib/index.js",
   "files": [
     "lib"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/eslint-config-pancake",
+  "repository": "",
   "license": "MIT",
-  "author": "RabbitDoge",
+  "author": "hydro",
   "private": false,
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.7.0",

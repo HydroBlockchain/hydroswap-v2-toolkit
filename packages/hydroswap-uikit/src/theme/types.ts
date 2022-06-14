@@ -41,6 +41,8 @@ export type Gradients = {
 };
 
 export type Colors = {
+  menuDropBackground?: string;
+  sliderBackground?:string;
   menuBackground?: string;
   btnColor?: string;
   btnBackground?: string;

@@ -48,7 +48,7 @@ const MenuItem: React.FC<FooterProps> = ({
           {items?.map((item) => (
             <StyledList key={item.label}>
               <StyledListItem>{item.label}</StyledListItem>
-              {item.items?.map(({ label, href, isHighlighted = false }) => (
+              {item.items?.map(({ label, href,}) => (
                 <StyledListItem key={label}>
                   {href ? (
                     <Link
@@ -73,10 +73,10 @@ const MenuItem: React.FC<FooterProps> = ({
         </Flex>
         
         <StyledSocialLinks order={[2]} pb={["10px", null, "0px"]} mb={["0", null, "0px"]} >
-          <span style={{marginRight:'1rem'}}>
-        <ThemeSwitcher isDark={theme.isDark} toggleTheme={toggleTheme}  /> 
+          {/* <span style={{marginRight:'1rem'}}>
+        <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme}  /> 
 
-          </span>
+          </span> */}
           </StyledSocialLinks>
         {/* <StyledToolsContainer
           order={[1, null, 3]}

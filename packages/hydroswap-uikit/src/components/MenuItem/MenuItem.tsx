@@ -9,6 +9,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
   isActive = false,
   variant = "default",
   statusColor,
+  external=false,
   ...props
 }) => {
   const { linkComponent } = useContext(MenuContext);
@@ -16,6 +17,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     ? {
         as: linkComponent,
         href,
+        ...(external && { target: "_blank", rel: "noopener noreferrer" }),
       }
     : {
         as: "div",

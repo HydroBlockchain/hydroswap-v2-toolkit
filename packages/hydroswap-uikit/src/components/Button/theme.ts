@@ -19,7 +19,7 @@ export const scaleVariants = {
 export const styleVariants = {
   [variants.PRIMARY]: {
     backgroundColor: "primary",
-    color: "black",
+    color: "tertiary",
   },
   [variants.BUTTON]: {
     backgroundColor: "btnBackground",

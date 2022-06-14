@@ -69,6 +69,7 @@ const StyledButton = styled.button<BaseButtonProps>`
     opacity: 0.85;
     transform: translateY(1px);
     box-shadow: none;
+    /* color:red!important; */
   }
 
   ${getDisabledStyles}

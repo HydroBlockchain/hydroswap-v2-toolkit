@@ -8,6 +8,7 @@ const StyledWrapper = styled.div<{ $width: number; $height: number }>`
   max-width: ${({ $width }) => $width}px;
   position: relative;
   width: 100%;
+  /* border:1px solid blue; */
 
   &:after {
     content: "";

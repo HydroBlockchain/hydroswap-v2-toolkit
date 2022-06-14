@@ -48,6 +48,7 @@ export const SliderLabel = styled(Text)<SliderLabelProps>`
   bottom: 0;
   font-size: 12px;
   left: ${({ progress }) =>  {
+
     return progress
   } };
   position: absolute;
@@ -91,7 +92,7 @@ export const StyledInput = styled.input<StyledInputProps>`
 `;
 
 export const BarBackground = styled.div<DisabledProp>`
-  background-color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "input"]};
+  background-color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "sliderBackground"]};
   height: 14px;
   position: absolute;
   top: 18px;

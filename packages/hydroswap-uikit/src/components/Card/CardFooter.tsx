@@ -5,6 +5,7 @@ export type CardFooterProps = SpaceProps;
 
 const CardFooter = styled.div<CardFooterProps>`
   border-top: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  background-color: ${({ theme }) => theme.colors.gradients.cardHeader};
   ${space}
 `;
 

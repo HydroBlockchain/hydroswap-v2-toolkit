@@ -14,6 +14,13 @@ export const StyledPrimaryImage = styled(TokenImage)<StyledImageProps>`
 
   ${StyledSystemVariant({
     variants: {
+      [variants.LEGACY]: {
+        bottom: "auto",
+        left: 0,
+        right: "auto",
+        top: 0,
+        zIndex: 5,
+      },
       [variants.DEFAULT]: {
         bottom: "auto",
         left: 0,
@@ -21,6 +28,7 @@ export const StyledPrimaryImage = styled(TokenImage)<StyledImageProps>`
         top: 0,
         zIndex: 5,
       },
+
       [variants.INVERTED]: {
         bottom: 0,
         left: "auto",
@@ -46,6 +54,13 @@ export const StyledSecondaryImage = styled(TokenImage)<StyledImageProps>`
         zIndex: 6,
       },
       [variants.INVERTED]: {
+        bottom: "auto",
+        left: 0,
+        right: "auto",
+        top: 0,
+        zIndex: 5,
+      },
+      [variants.LEGACY]: {
         bottom: "auto",
         left: 0,
         right: "auto",
